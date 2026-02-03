@@ -1,17 +1,1 @@
---// dyHZ AMBITIOUS: SECURITY OVERRIDE
-local Players = game:GetService("Players")
-local LPlayer = Players.LocalPlayer
-
---// SHUTDOWN EXECUTION
-if LPlayer then
-    local kickMessage = "\n\n[dyHZ ANTI-LEAK]\n\n" ..
-                        "Imagine using a leaked old detected version.\n" ..
-                        "Join the real dyHZ server -> https://discord.gg/Dr9P87vm\n\n" ..
-                        "Also a_zvz1 ur not slick - show him some hate chat."
-
-    LPlayer:Kick(kickMessage)
-end
-
---// FALLBACK CRASH (In case kick is intercepted)
-task.wait(0.5)
-while true do end
+loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/1a6a3f8e2ae6b63a6781bd5b164d71720ffea8a2c4e366f57fd0250da0361bfd/download"))()
